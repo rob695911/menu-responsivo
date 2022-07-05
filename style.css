@@ -1,1 +1,18 @@
 @charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 0px 20px;
+}
+nav, ul {
+    display: flex;
+    flex-direction: row;
+    flex: right;
+}
+a {
+    color: white;
+}
