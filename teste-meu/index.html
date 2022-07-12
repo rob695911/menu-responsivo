@@ -7,14 +7,16 @@
     <title>Rede Social</title>
    <style>
     body {
-        background-color: aqua;
+        background-color: rgb(44, 49, 49);
         background-image: url('81mg.gif');
+        
+        
     }
     section {
         position: relative;
         top: 50px;
-        height: 500px;
-        max-width: 500px;
+        height: 600px;
+        max-width: 600px;
         border: 2px solid black;
         background-color: white;
         border-radius: 10px;
@@ -30,6 +32,7 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         padding: 0px;
+        opacity: 50%;
 
     }
 
@@ -76,17 +79,65 @@
        background-size: cover;
        width: 25px;
     }
-  a.teste1 {
+  a.teste1{
     display: inline-block;
     height: 100px;
-    position: relative;
-    left: 110px;
+    float: right;
+    width: 100px;
+    padding-right: 3px;
   }
     
    .face2{
       position: fixed;
       left: 50%;
    }
+
+  p {
+    padding: 5px;
+  }
+
+  .menu {
+    float: right;
+    margin-right: 10px;
+    padding-bottom: 20px;
+  }
+  .menu:hover {
+    opacity: 0.9;
+    padding: 1px;
+  }
+
+  ul {
+    background-color: bisque;
+    padding: 10px;
+  }
+  li {
+    display: inline-block;
+    opacity: 0.7;
+    padding: 5px;
+  }
+
+  .menu-centro {
+    position: absolute;
+    width: 90px;
+    background-color: rgb(237, 177, 102);
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 8px;
+    display: none;
+  }
+
+  .menu-centro a {
+    display: block;
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  .menu:hover .menu-centro {
+    display: block;
+  }
+
+  
+
 
    </style>
 </head>
@@ -95,18 +146,29 @@
         <div class="foto">
           <img class="foto2" src="foto.jpg" alt="">
         </div>
+        <ul>
+            <li><a href="#">link</a>
+            <li><a href="#">link</a>
+            <li><a href="#">link</a>
+            <li class="menu">
+                <a class="centro" href="#">menu</a>
+                <div class="menu-centro">
+                    <a href="#">link</a>
+                    <a href="#">link</a>
+                    <a href="#">link</a>
+                    <a href="#">link</a>
+                </div>
+            
+        </ul>
+        
         <h1>Fale comigo pela</h1>
         <div class="face"><img class="face" src="face.png" alt=""></div>
         <p><a href="#">Facebook</a></p>
         <div class="face"><img class="face" src="face.png" alt=""></div>
         <p><a href="#">Facebook</a></p>
         <a class="teste1" href="#">teste</a>
-        <a class="teste1" href="#">teste</a>
-        <a class="teste1" href="#">teste</a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod sunt dolor iusto aperiam error dicta, omnis minus enim incidunt iste beatae. Perspiciatis recusandae eos numquam doloremque sequi cumque, odit sit?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi vero, sit voluptas, corporis, nisi ipsam iure cum pariatur molestiae laborum aliquam facilis perferendis dicta distinctio! Exercitationem aut architecto sequi?</p>
     </section>
-    <div class="face3">
-        <a class="face2" href="#"><img class="face" src="face.png" alt="">
-        </a>
-    </div>
-</body>
+    
 </html>
