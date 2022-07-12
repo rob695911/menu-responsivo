@@ -27,13 +27,12 @@
     .foto {
         justify-content: center;
         display: flex;
-        background-color: grey;
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.434);
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         padding: 0px;
         opacity: 50%;
-
+      background-image: linear-gradient(to bottom left, blue, yellow,white);
     }
 
     .foto2{
@@ -78,13 +77,19 @@
        top: 9px;
        background-size: cover;
        width: 25px;
+       
     }
-  a.teste1{
+  div.teste1{
     display: inline-block;
     height: 100px;
     float: right;
     width: 100px;
-    padding-right: 3px;
+    margin: 5px;
+    text-align: center;
+  }
+  img {
+    width: 100px;
+    max-height: 90px;
   }
     
    .face2{
@@ -136,6 +141,23 @@
     display: block;
   }
 
+  .teste2 {
+   padding: 5px 20px 5px 30px;
+   text-align: center;
+   
+  }
+
+  a.teste2:hover {
+   color: red;
+   position: relative;
+   top: -100px;
+   background-image: url(81mg.gif);
+   padding: 50px;
+   width: 50px;
+  white-space: normal;
+  }
+
+ 
   
 
 
@@ -166,7 +188,10 @@
         <p><a href="#">Facebook</a></p>
         <div class="face"><img class="face" src="face.png" alt=""></div>
         <p><a href="#">Facebook</a></p>
-        <a class="teste1" href="#">teste</a>
+        <div class="teste1">
+          <a class="teste2" href="#">teste2</a>
+          <img src="https://picsum.photos/id/1/200/300" alt="">
+        </div>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod sunt dolor iusto aperiam error dicta, omnis minus enim incidunt iste beatae. Perspiciatis recusandae eos numquam doloremque sequi cumque, odit sit?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi vero, sit voluptas, corporis, nisi ipsam iure cum pariatur molestiae laborum aliquam facilis perferendis dicta distinctio! Exercitationem aut architecto sequi?</p>
     </section>
